@@ -1,0 +1,19 @@
+Modify your pyramid pattern code to accept the number of rows as user input, so the user can set the height of the pyramid before printing.
+
+let rows = Number(prompt("Enter the number of rows:"));
+
+for (let row = 1; row <= rows; row++) {
+    let pattern = "";
+
+    // Print spaces
+    for (let space = 1; space <= rows - row; space++) {
+        pattern += " ";
+    }
+
+    // Print stars
+    for (let star = 1; star <= 2 * row - 1; star++) {
+        pattern += "*";
+    }
+
+    console.log(pattern);
+}

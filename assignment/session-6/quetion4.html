@@ -1,0 +1,19 @@
+Explain with your own example the difference between entry-controlled and exit-controlled loops by writing a short code snippet for each (for/while vs do-while) and describing what happens if the loop condition is false at the start.
+
+let songs = ["Believer", "Perfect", "Shape of You"];
+
+let randomIndex = Math.floor(Math.random() * songs.length);
+let song = songs[randomIndex];
+
+let guess;
+
+do {
+    guess = prompt("Guess the song name:");
+    
+    if (guess === song) {
+        console.log("Correct! You guessed the song!");
+    } else {
+        console.log("Wrong guess! Try again.");
+    }
+
+} while (guess !== song);

@@ -1,0 +1,17 @@
+Create a pattern that prints a pyramid of stars (*) with 6 rows, centered like the loading animation you see on BookMyShow when a page is loading.<br><br><em><strong>Hint:</strong> Use spaces to align the stars in the center for each row.</em>
+
+for (let row = 1; row <= 6; row++) {
+    let pattern = "";
+
+    // Spaces
+    for (let space = 1; space <= 6 - row; space++) {
+        pattern += " ";
+    }
+
+    // Stars
+    for (let star = 1; star <= 2 * row - 1; star++) {
+        pattern += "*";
+    }
+
+    console.log(pattern);
+}

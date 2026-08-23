@@ -1,0 +1,20 @@
+Build a function that takes a 1D array of 7 integers representing your daily Zomato order amounts and calculates the average spend for the week.<br><br><em><strong>Hint:</strong> Use a loop to sum the values, then divide by the array length.</em>
+
+
+function calculateAverageSpend(orderAmounts) {
+    let total = 0;
+
+    for (let i = 0; i < orderAmounts.length; i++) {
+        total += orderAmounts[i];
+    }
+
+    let average = total / orderAmounts.length;
+
+    return average;
+}
+
+let dailyOrders = [250, 400, 150, 300, 500, 350, 450];
+
+let averageSpend = calculateAverageSpend(dailyOrders);
+
+console.log("Average weekly spend: ₹" + averageSpend);

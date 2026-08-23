@@ -1,0 +1,28 @@
+Write two functions: increaseFollowersByValue and increaseFollowersByReference. Each should take a followers count and add 1000 to it, but one should use pass-by-value and the other pass-by-reference. Show how the original followers count changes (or doesn't) after calling each function.
+
+// Pass by value
+function increaseFollowersByValue(followers) {
+    followers = followers + 1000;
+    console.log("Inside function:", followers);
+}
+
+// Pass by reference using an object
+function increaseFollowersByReference(followers) {
+    followers.count = followers.count + 1000;
+    console.log("Inside function:", followers.count);
+}
+
+// Pass by value
+let followers1 = 5000;
+
+console.log("Before value function:", followers1);
+increaseFollowersByValue(followers1);
+console.log("After value function:", followers1);
+
+
+// Pass by reference
+let followers2 = { count: 5000 };
+
+console.log("Before reference function:", followers2.count);
+increaseFollowersByReference(followers2);
+console.log("After reference function:", followers2.count);

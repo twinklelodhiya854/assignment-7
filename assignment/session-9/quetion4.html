@@ -1,0 +1,14 @@
+Given a 2D array called cricketScores where each row represents an IPL match and columns represent runs scored by each team, write code to print the highest score from each match.
+
+let cricketScores = [
+    [180, 175],
+    [210, 195],
+    [165, 170],
+    [200, 188]
+];
+
+for (let i = 0; i < cricketScores.length; i++) {
+    let highestScore = Math.max(...cricketScores[i]);
+
+    console.log("Match " + (i + 1) + " highest score: " + highestScore);
+}

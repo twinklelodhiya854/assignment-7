@@ -1,0 +1,14 @@
+Declare a function called getUserInitials that takes a user's full name (like 'Virat Kohli') and returns their initials in uppercase (e.g., 'VK'). Call this function with your favorite cricketer's name and print the result.
+
+function getUserInitials(fullName) {
+    let nameParts = fullName.split(" ");
+
+    let firstInitial = nameParts[0][0];
+    let lastInitial = nameParts[nameParts.length - 1][0];
+
+    return (firstInitial + lastInitial).toUpperCase();
+}
+
+let result = getUserInitials("Virat Kohli");
+
+console.log(result);

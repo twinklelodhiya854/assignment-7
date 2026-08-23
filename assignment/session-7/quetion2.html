@@ -1,0 +1,12 @@
+Build a right-angled triangle pattern using nested loops, where each row displays increasing numbers starting from 1, similar to how a leaderboard on a gaming app shows rank numbers.
+
+
+for (let row = 1; row <= 5; row++) {
+    let pattern = "";
+
+    for (let num = 1; num <= row; num++) {
+        pattern += num + " ";
+    }
+
+    console.log(pattern);
+}

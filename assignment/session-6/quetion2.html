@@ -1,0 +1,43 @@
+Create a menu-driven console app that lets the user: 1) View your favorite 3 IPL teams, 2) Add a new team, 3) Exit. Use a while loop to keep showing the menu until the user chooses Exit.<br><br><em><strong>Hint:</strong> Use input() (or Scanner in Java) to get the user's choice each time.</em>
+
+
+let teams = [
+    "Mumbai Indians",
+    "Chennai Super Kings",
+    "Royal Challengers Bengaluru"
+];
+
+let choice = 0;
+
+while (choice !== 3) {
+
+    console.log("\n1. View Favorite IPL Teams");
+    console.log("2. Add a New Team");
+    console.log("3. Exit");
+
+    choice = Number(prompt("Enter your choice:"));
+
+    if (choice === 1) {
+
+        console.log("Favorite IPL Teams:");
+
+        for (let i = 0; i < teams.length; i++) {
+            console.log((i + 1) + ". " + teams[i]);
+        }
+
+    } else if (choice === 2) {
+
+        let newTeam = prompt("Enter new IPL team:");
+        teams.push(newTeam);
+
+        console.log("Team added successfully!");
+
+    } else if (choice === 3) {
+
+        console.log("Exiting...");
+
+    } else {
+
+        console.log("Invalid choice!");
+    }
+}

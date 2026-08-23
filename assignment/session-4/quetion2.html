@@ -1,0 +1,17 @@
+Build a Flipkart-style discount calculator: given product price, discount percentage, and a boolean isMember, use arithmetic and logical operators to calculate the final price (apply an extra 5% off if isMember is true).
+
+
+function calculateFinalPrice(productPrice, discountPercentage, isMember) {
+    // Apply normal discount
+    let discount = productPrice * (discountPercentage / 100);
+    let finalPrice = productPrice - discount;
+
+    // Apply extra 5% discount for members
+    if (isMember === true) {
+        finalPrice = finalPrice - (finalPrice * 5 / 100);
+    }
+
+    return finalPrice;
+}
+
+console.log(calculateFinalPrice(1000, 20, true));

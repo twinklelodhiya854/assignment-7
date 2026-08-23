@@ -1,0 +1,10 @@
+Write a function isEligibleForOffer that takes a user's age and total order value, and returns true if the user is 18 or older AND the order value is above 500, otherwise false.<br><br><em><strong>Hint:</strong> Use relational and logical operators together.</em>
+
+
+function isEligibleForOffer(age, orderValue) {
+    return age >= 18 && orderValue > 500;
+}
+
+console.log(isEligibleForOffer(20, 600)); // true
+console.log(isEligibleForOffer(16, 600)); // false
+console.log(isEligibleForOffer(20, 400)); // false

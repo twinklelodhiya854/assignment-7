@@ -1,0 +1,20 @@
+Build a 'Guess the Song' game like Spotify — the program randomly picks a song name from a list and asks the user to guess it. Use a do-while loop so the user can keep guessing until they get it right.<br><br><em><strong>Constraint:</strong> Use at least 3 song names of your choice.</em>
+
+
+let songs = ["Believer", "Perfect", "Shape of You"];
+
+let randomIndex = Math.floor(Math.random() * songs.length);
+let song = songs[randomIndex];
+
+let guess;
+
+do {
+    guess = prompt("Guess the song name:");
+    
+    if (guess === song) {
+        console.log("Correct! You guessed the song!");
+    } else {
+        console.log("Wrong guess! Try again.");
+    }
+
+} while (guess !== song);

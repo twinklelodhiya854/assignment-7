@@ -1,0 +1,27 @@
+Draw a simple memory diagram (on paper or using any drawing tool) showing how a pointer references the address of a variable, using the variables from your likes and ptrLikes example; label the variable, pointer, and address.
+
+                 POINTER
+              ┌─────────────┐
+ptrLikes  ───► │ 0x1000      │
+              └─────────────┘
+                    │
+                    │ points to
+                    ▼
+              ┌─────────────┐
+Address       │   500       │
+0x1000  ────► │   likes     │
+              └─────────────┘
+                 VARIABLE
+
+
+
+
+
+
+
+
+
+int likes = 500;
+int *ptrLikes;
+
+ptrLikes = &likes;

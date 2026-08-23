@@ -1,0 +1,14 @@
+Take input for two usernames (as strings) and compare them using strcmp(). Display whether they are the same or different.
+
+<?php
+
+$username1 = readline("Enter first username: ");
+$username2 = readline("Enter second username: ");
+
+if (strcmp($username1, $username2) == 0) {
+    echo "Usernames are the same.";
+} else {
+    echo "Usernames are different.";
+}
+
+?>

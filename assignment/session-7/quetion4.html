@@ -1,0 +1,16 @@
+Write code using nested loops to print a pattern of alternating 0s and 1s in a grid, like the checkered background seen in some Spotify playlist covers (e.g., for a 4x4 grid, alternate 0 and 1 in each cell).
+
+
+for (let row = 0; row < 4; row++) {
+    let pattern = "";
+
+    for (let col = 0; col < 4; col++) {
+        if ((row + col) % 2 === 0) {
+            pattern += "0 ";
+        } else {
+            pattern += "1 ";
+        }
+    }
+
+    console.log(pattern);
+}

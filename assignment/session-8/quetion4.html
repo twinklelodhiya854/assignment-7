@@ -1,0 +1,13 @@
+Build a function formatPrice that takes a price in rupees and returns a string formatted like Flipkart's price tag (e.g., '₹1,599'). Use this function to display prices for three different products.
+
+function formatPrice(price) {
+    return "₹" + price.toLocaleString("en-IN");
+}
+
+let product1 = formatPrice(1599);
+let product2 = formatPrice(24999);
+let product3 = formatPrice(799);
+
+console.log("Product 1: " + product1);
+console.log("Product 2: " + product2);
+console.log("Product 3: " + product3);
